@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html,body{
+    height: 100%; /* faz a pag não ter scroll bar (usa apenas a window para mostrar o conteudo)*/
+    overflow-y: hidden; /* não prove uma scrollbar*/
+    overflow-x: hidden;
+}
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+    
+}
+
+
+
+
+.logo{
+
+    width:50%;
+}
+
+header{
+    padding: 20px 0;
+    height: 10em;
+
+}
+
+.menu{
+    padding-top: 1.5em;
+    width: 50%;
+    text-align: right;
+}
+
+.menu a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: .75em;
+}
+
+section.sobre{
+   height: calc(100% - 10em);
+    position: relative;
+}
+
+.extras{
+    position: absolute;
+    border-radius: 50%;
+    bottom: -45em;
+    right: -45em;
+    width: 90em;
+    height: 90em;
+    background-color:#006342;
+
+} 
+
+.socialmedia{
+    position: absolute;
+    right: 46em; /*se estivesse 0, seria com base na div pai (circulo grande),
+    impossibilitando a visão, por isso, é adicionado o valor retirado no circulo (+ pra nao ficar grudad)*/
+    top: 15em;
+}
+
+.socialmedia img{
+    display: block;
+    width: 1.2em;
+    margin: 2em 0;
+}
+
+#facebook{
+    height: 1.5em;
+    width: .75em;
+    margin-left: .3em;
+    
+}
+.text{
+    margin-top: 10em;
+}
+
+.text h1{
+    font-size: 4em;
+}
+
+.text p{
+    font-size: 1em;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-top: 1em;
+    max-width: 50em;
+    line-height: 150%;
+}
+
+.text button{
+    margin-top: 1em;
+    border: 0;
+    background-color: #006342;
+    color: white;
+    width: 8em;
+    height: 2.5em;
+    border-radius: 1em;
+    cursor: pointer;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.thumbs{
+   
+    position: absolute;
+    margin: 0;
+    bottom: 50%;
+    left: 50%;
+    bottom: -50;
+    transform: translate(-50%, -50%);
+}
+
+.thumbs img{
+    width: 3.5em;
+    margin-left: 1em;
+    margin-bottom: .75em;
+}
+
+@media screen and (max-width: 768px) {
+        .center{
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 768px;
+            margin: 0 auto;
+            padding: 0 2%;
+            
+        }
+
+}
